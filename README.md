@@ -4,17 +4,22 @@ A robust web-based document scanner application built with **Python (Flask)** an
 
 This project simulates the functionality of mobile scanning apps (like CamScanner) but provides a **"Glass Box"** experience, visualizing every step of the image processing pipeline. It is designed to handle real-world challenges such as **glare, shadows, and finger occlusion**.
 
-!(screenshots/demo.png)
-![Fisrt Stage Find Countour](screenshots/first_stage.png)
-![Grey Scale](screenshots/greyscale.png)
-![Project Demo](screenshots/demo.png)
-![Project Demo](screenshots/demo.png)
-![Project Demo](screenshots/demo.png)
-![Project Demo](screenshots/demo.png)
-![Project Demo](screenshots/demo.png)
+*(DEMO)*
+![Project Demo](screenshots/1.demo.png)
+*(Stage1 Find Contour)*
+![Fisrt Stage Find Countour](screenshots/2.first_stage.png)
+![Grey Scale](screenshots/3.greyscale.png)
+![ADD Blur](screenshots/4.gaussian_filter.png)
+![Canny](screenshots/5.find_edges_with_canny.png)
+![Morphology](screenshots/6.dilation.png)
+![Contour Finded](screenshots/7.contour_detect.png)
+*(Stage 2 (Perspective & Final Result with other options))*
+![Fianl Stage](screenshots/8.final_stage.png)
+![Perspective](screenshots/9.perspective.png)
+![Final Result](screenshots/10.final_result.png)
+![Other Options](screenshots/11.other_options.png)
 
 
-*(Note: Replace this link with a screenshot of your UI if available)*
 
 ## ✨ Key Features
 
@@ -84,3 +89,19 @@ Once the 4 corners are identified:
 * **Magic Color:** Converts the image to **HSV** space, boosts the **Saturation (S)** channel by 50%, and applies CLAHE (Contrast Limited Adaptive Histogram Equalization) to the Value channel.
 
 ## 📂 Project Structure
+├── app.py                  # Main Flask application entry point
+├── utils/
+│   ├── stage2_contours.py  # Contour detection logic (Hull & Closing)
+│   ├── stage3_perspective.py # Warping & geometric transformation
+│   └── stage4_filter.py    # Image enhancement filters
+├── static/                 # Images, Uploads
+├── templates/
+│   └── index.html          # Frontend UI
+|── README.md               # Documentation
+│
+└── screenshots               # screenshots
+
+
+## 🤝 Contributing
+
+Contributions, issues, and feature requests are welcome!
