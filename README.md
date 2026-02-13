@@ -4,7 +4,7 @@ A robust web-based document scanner application built with **Python (Flask)** an
 
 This project simulates the functionality of mobile scanning apps (like CamScanner) but provides a **"Glass Box"** experience, visualizing every step of the image processing pipeline. It is designed to handle real-world challenges such as **glare, shadows, and finger occlusion**.
 
-![Project Demo](screenshots/demo.png)
+!(screenshots/demo.png)
 ![Fisrt Stage Find Countour](screenshots/first_stage.png)
 ![Grey Scale](screenshots/greyscale.png)
 ![Project Demo](screenshots/demo.png)
