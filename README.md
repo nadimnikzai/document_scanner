@@ -13,7 +13,7 @@ This project simulates the functionality of mobile scanning apps (like CamScanne
 ![Canny](screenshots/5.find_edges_with_canny.png)
 ![Morphology](screenshots/6.dilation.png)
 ![Contour Finded](screenshots/7.contour_detect.png)
-*()*
+
 *(Stage 2 (Perspective & Final Result with other options))*
 ![Fianl Stage](screenshots/8.final_stage.png)
 ![Perspective](screenshots/9.perspective.png)
