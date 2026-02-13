@@ -90,6 +90,7 @@ Once the 4 corners are identified:
 * **Magic Color:** Converts the image to **HSV** space, boosts the **Saturation (S)** channel by 50%, and applies CLAHE (Contrast Limited Adaptive Histogram Equalization) to the Value channel.
 
 ## 📂 Project Structure
+```
 ├── app.py                  # Main Flask application entry point
 ├── utils/
 │   ├── stage2_contours.py  # Contour detection logic (Hull & Closing)
@@ -101,7 +102,7 @@ Once the 4 corners are identified:
 |── README.md               # Documentation
 │
 └── screenshots               # screenshots
-
+```
 
 ## 🤝 Contributing
 
